@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAGEN SHIELD | Expert Guidance for Responsible Gun Owners</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts: Montserrat & Lato -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        /*--------------------------------------------------------------
+        # Custom Styles
+        --------------------------------------------------------------*/
+        :root {
+            --primary-color: #2C3E50;
+            /* Midnight Blue */
+            --secondary-color: #34495E;
+            /* Wet Asphalt */
+            --accent-color: #E67E22;
+            /* Carrot Orange */
+            --text-light: #ECF0F1;
+            /* Clouds */
+            --background-light: #FFFFFF;
+        }
+
+        body {
+            font-family: 'Lato', sans-serif;
+            color: var(--secondary-color);
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        .navbar-brand {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+        }
+
+        .btn-accent {
+            background-color: var(--accent-color);
+            border-color: var(--accent-color);
+            color: var(--text-light);
+            font-weight: bold;
+        }
+
+        .btn-accent:hover {
+            background-color: #d35400;
+            /* Darker Orange */
+            border-color: #d35400;
+            color: var(--text-light);
+        }
+
+        .bg-primary-dark {
+            background-color: var(--primary-color);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            position: relative;
+            height: 80vh;
+            background-size: cover;
+            background-color: #34495E;
+            color: #d35400;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+
+        .hero::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.5);
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: 900;
+        }
+
+        /* --- Sections --- */
+        .section-title {
+            text-align: center;
+            padding-bottom: 30px;
+        }
+
+        .section-title h2 {
+            font-size: 32px;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            position: relative;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: var(--accent-color);
+            bottom: 0;
+            left: calc(50% - 25px);
+        }
+
+        /* --- Specific Section Styles --- */
+        .class-level-card {
+            border: 1px solid #ddd;
+            transition: all 0.3s ease-in-out;
+        }
+
+        .class-level-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .safety-commitment {
+            background-color: #f8f9fa;
+        }
+
+        .instructor-profile img {
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+
+        #footer {
+            background: var(--secondary-color);
+            color: var(--text-light);
+            font-size: 14px;
+        }
+
+        #footer .social-links a {
+            color: var(--text-light);
+            font-size: 18px;
+            padding: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ======= Header / Navigation ======= -->
+    <header id="header" class="fixed-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-primary-dark shadow">
+            <div class="container">
+                <a class="navbar-brand" href="#hero">
+                    <i class="fa-solid fa-crosshairs"></i> MAGEN SHIELD
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#hero">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#classes">Class Offerings</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#schedule">Course Schedules</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#safety">Safety</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#instructors">Our Instructors</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-accent ms-lg-2 px-3" href="#contact">Contact &
+                                Registration</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ======= Hero Section ======= -->
+    <section id="hero" class="hero">
+        <div class="hero-content">
+            <h1 class="text-white">Expert Guidance for Responsible Firearm Ownership.</h1>
+            <p class="lead text-white-50">Magen Shield offers comprehensive, safety-first instruction for
+                every skill level.</p>
+            <a href="#classes" class="btn btn-accent btn-lg mt-3">View Our Courses</a>
+        </div>
+    </section>
+
+    <main id="main">
+
+        <!-- ======= Introduction Section ======= -->
+        <section id="about" class="py-5">
+            <div class="container text-center">
+                <p class="lead">Welcome to Magen Shield, your premier destination for professional and
+                    responsible firearms education. Our mission is to empower our community with the knowledge, skills,
+                    and confidence to handle firearms safely and proficiently. We are committed to creating a secure and
+                    supportive learning environment for all.</p>
+            </div>
+        </section>
+
+
+        <!-- ======= Class Offerings Section ======= -->
+        <section id="classes" class="py-5 bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Class Offerings</h2>
+                    <p>Training pathways designed for your success.</p>
+                </div>
+                <div class="row g-4">
+                    <!-- Beginner -->
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                        <div class="card class-level-card text-center p-4">
+                            <img src="https://placehold.co/600x400/e8e8e8/333?text=New+Shooter" class="card-img-top"
+                                alt="Beginner Class">
+                            <div class="card-body">
+                                <h3 class="card-title">New Shooters</h3>
+                                <p class="card-text">Start your journey with a solid foundation. Our beginner courses
+                                    focus on safety fundamentals, basic handling, and building confidence.</p>
+                                <a href="#" class="btn btn-outline-dark">Explore Beginner Classes</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Intermediate -->
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                        <div class="card class-level-card text-center p-4">
+                            <img src="https://placehold.co/600x400/e8e8e8/333?text=Skill+Builder" class="card-img-top"
+                                alt="Intermediate Class">
+                            <div class="card-body">
+                                <h3 class="card-title">Skill Builders</h3>
+                                <p class="card-text">Refine your technique and enhance your accuracy. Our intermediate
+                                    workshops are designed to build upon your existing skills.</p>
+                                <a href="#" class="btn btn-outline-dark">See Intermediate Workshops</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Advanced -->
+                    <div class="col-lg-4 d-flex align-items-stretch">
+                        <div class="card class-level-card text-center p-4">
+                            <img src="https://placehold.co/600x400/e8e8e8/333?text=Advanced+Drills" class="card-img-top"
+                                alt="Advanced Class">
+                            <div class="card-body">
+                                <h3 class="card-title">Advanced Training</h3>
+                                <p class="card-text">Challenge yourself with advanced drills, defensive scenarios, and
+                                    specialized training under the guidance of our expert instructors.</p>
+                                <a href="#" class="btn btn-outline-dark">View Advanced Courses</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+        <!-- ======= Course Schedule Section ======= -->
+        <section id="schedule" class="py-5">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Course Schedule</h2>
+                    <p>Find an upcoming class that fits your schedule. Click on an event for details and registration.
+                    </p>
+                </div>
+                <!-- Interactive Calendar would be embedded here. This is a placeholder. -->
+                <div class="p-5 border text-center bg-light">
+                    <p class="h4">Interactive Calendar Placeholder</p>
+                    <small class="text-muted">A functional calendar from Google Calendar or a similar tool would be
+                        embedded here.</small>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= Safety Commitment Section ======= -->
+        <section id="safety" class="py-5 safety-commitment">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-2 text-center">
+                        <i class="fa-solid fa-shield-halved fa-5x" style="color: var(--accent-color);"></i>
+                    </div>
+                    <div class="col-lg-10">
+                        <h3>Our Unwavering Commitment to Safety</h3>
+                        <p class="lead">Safety is the cornerstone of everything we do. From our curriculum and range
+                            rules to our instructor qualifications, every aspect of our training is designed to ensure a
+                            secure and responsible environment. We believe that safe firearm handling is not just a
+                            rule, but a mindset.</p>
+                        <a href="#" class="btn btn-accent">Read Our Safety Philosophy</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= Instructors Section ======= -->
+        <section id="instructors" class="py-5 bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Learn From The Best</h2>
+                    <p>Our instructors are certified professionals with extensive backgrounds in law enforcement,
+                        military, and competitive shooting.</p>
+                </div>
+                <div class="row text-center">
+                    <!-- Instructor 1 -->
+                    <div class="col-md-4">
+                        <div class="instructor-profile">
+                            <img src="https://placehold.co/150x150/2c3e50/ffffff?text=J.+Doe"
+                                class="rounded-circle mb-3" alt="Instructor John Doe">
+                            <h4>John Doe</h4>
+                            <p class="text-muted">Lead Instructor | USMC Veteran</p>
+                            <p>John brings 20 years of marksmanship experience to the team, specializing in pistol and
+                                rifle fundamentals.</p>
+                        </div>
+                    </div>
+                    <!-- Instructor 2 -->
+                    <div class="col-md-4">
+                        <div class="instructor-profile">
+                            <img src="https://placehold.co/150x150/2c3e50/ffffff?text=J.+Smith"
+                                class="rounded-circle mb-3" alt="Instructor Jane Smith">
+                            <h4>Jane Smith</h4>
+                            <p class="text-muted">Defensive Training Specialist</p>
+                            <p>With a background in law enforcement, Jane focuses on real-world defensive shooting and
+                                situational awareness.</p>
+                        </div>
+                    </div>
+                    <!-- Instructor 3 -->
+                    <div class="col-md-4">
+                        <div class="instructor-profile">
+                            <img src="https://placehold.co/150x150/2c3e50/ffffff?text=S.+Lee"
+                                class="rounded-circle mb-3" alt="Instructor Sam Lee">
+                            <h4>Sam Lee</h4>
+                            <p class="text-muted">Range Safety Officer | NRA Certified</p>
+                            <p>Sam is an NRA-certified RSO and instructor, passionate about creating a safe and
+                                welcoming environment for new shooters.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ======= Testimonials Section ======= -->
+        <section id="testimonials" class="py-5">
+            <div class="container">
+                <div class="section-title">
+                    <h2>What Our Students Say</h2>
+                </div>
+                <!-- A functional carousel requires JavaScript. This is a static example. -->
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner text-center">
+                        <div class="carousel-item active">
+                            <p class="lead fst-italic">"The Basic Pistol course was fantastic. The instructors were
+                                patient, knowledgeable, and made me feel completely comfortable. I left with so much
+                                confidence!"</p>
+                            <h5 class="mt-3">- Sarah K., Basic Pistol</h5>
+                        </div>
+                        <div class="carousel-item">
+                            <p class="lead fst-italic">"I've been shooting for years, but the Intermediate Skill Builder
+                                class taught me things I never knew. Highly recommend for breaking bad habits."</p>
+                            <h5 class="mt-3">- Mark T., Intermediate Skill Builder</h5>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true" style="filter: invert(1);"></span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- ======= Contact & Registration Section ======= -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contact & Registration</h2>
+                    <p>Have a question or ready to sign up? Reach out to us or use the form below.</p>
+                </div>
+                <div class="row">
+                    <!-- Contact Info -->
+                    <div class="col-lg-6">
+                        <h3>Get In Touch</h3>
+                        <p><i class="fa-solid fa-location-dot"></i> 123 Safety Way, Responsible City, 54321</p>
+                        <p><i class="fa-solid fa-phone"></i> (555) 123-4567</p>
+                        <p><i class="fa-solid fa-envelope"></i> contact@apextraining.com</p>
+                        <p><i class="fa-solid fa-clock"></i> Tues - Sun: 9:00 AM - 7:00 PM</p>
+                        <!-- Map Placeholder -->
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1522.585573471842!2d-74.0071447!3d40.712776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDEyJzQ2LjAiTiA3NMKwMDAnMjUuNyJX!5e0!3m2!1sen!2sus!4v1616161616161!5m2!1sen!2sus"
+                            width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <!-- Registration Form -->
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <h3>Register for a Class</h3>
+                        <form action="#" method="post" role="form" class="needs-validation" novalidate>
+                            <div class="row">
+                                <div class="col-md-6 form-group">
+                                    <input type="text" name="name" class="form-control" id="name"
+                                        placeholder="First Name" required>
+                                </div>
+                                <div class="col-md-6 form-group mt-3 mt-md-0">
+                                    <input type="text" class="form-control" name="last-name" id="last-name"
+                                        placeholder="Last Name" required>
+                                </div>
+                            </div>
+                            <div class="form-group mt-3">
+                                <input type="email" class="form-control" name="email" id="email"
+                                    placeholder="Your Email" required>
+                            </div>
+                            <div class="form-group mt-3">
+                                <select class="form-select" id="class-select" required>
+                                    <option selected disabled value="">Choose Your Class...</option>
+                                    <option>Basic Pistol 101</option>
+                                    <option>Intermediate Skill Builder</option>
+                                    <option>Advanced Defensive Rifle</option>
+                                </select>
+                            </div>
+                            <div class="form-group mt-3">
+                                <select class="form-select" id="date-select" required>
+                                    <option selected disabled value="">Select a Date...</option>
+                                    <option>Saturday, Aug 9, 2025</option>
+                                    <option>Sunday, Aug 10, 2025</option>
+                                </select>
+                            </div>
+                            <div class="form-check mt-3">
+                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" required>
+                                <label class="form-check-label" for="flexCheckDefault">
+                                    I have read and agree to the <a href="#safety">Safety Rules and Liability
+                                        Waiver</a>.
+                                </label>
+                            </div>
+                            <div class="text-center mt-4">
+                                <button type="submit" class="btn btn-accent w-100">Proceed to Payment</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main><!-- End #main -->
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer" class="py-4">
+        <div class="container text-center text-md-start">
+            <div class="row">
+                <div class="col-lg-6">
+                    <h4>MAGEN SHIELD</h4>
+                    <p>Professional, Responsible, and Safe Firearms Education.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-end">
+                    <p>© 2025 MAGEN SHIELD. All Rights Reserved.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
