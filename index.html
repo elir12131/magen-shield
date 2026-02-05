@@ -72,7 +72,7 @@
         /* --- Hero Section --- */
         .hero {
             position: relative;
-            height: 80vh;
+            min-height: 100vh;
             background-size: cover;
             background-color: #34495E;
             color: #d35400;
@@ -80,6 +80,7 @@
             align-items: center;
             justify-content: center;
             text-align: center;
+            padding: 80px 15px 40px;
         }
 
         .hero::after {
@@ -95,11 +96,36 @@
         .hero-content {
             position: relative;
             z-index: 2;
+            max-width: 900px;
+            padding: 0 15px;
         }
 
         .hero h1 {
-            font-size: 4rem;
+            font-size: clamp(1.75rem, 5vw, 4rem);
             font-weight: 900;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+        }
+
+        .hero .lead {
+            font-size: clamp(1rem, 2.5vw, 1.25rem);
+        }
+
+        /* Mobile hero adjustments */
+        @media (max-width: 768px) {
+            .hero {
+                min-height: auto;
+                padding: 100px 20px 60px;
+            }
+
+            .hero h1 {
+                margin-bottom: 0.75rem;
+            }
+
+            .hero .btn-lg {
+                padding: 0.75rem 1.5rem;
+                font-size: 1rem;
+            }
         }
 
         /* --- Sections --- */
